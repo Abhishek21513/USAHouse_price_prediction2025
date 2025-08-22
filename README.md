@@ -261,4 +261,9 @@ Epoch 49/50
 Epoch 50/50
 94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 36ms/step - loss: 0.0819
 63/63 ━━━━━━━━━━━━━━━━━━━━ 2s 24ms/step
+<img width="598" height="455" alt="download (1)" src="https://github.com/user-attachments/assets/4c299512-e255-4080-9fc2-27c88031fe20" />
+<img width="562" height="455" alt="download (2)" src="https://github.com/user-attachments/assets/a00aac48-d99d-4f07-ac36-92fa9b2449a3" />
+
+
+
 
