@@ -1,4 +1,4 @@
-# USAHouse_price_prediction2025
+<img width="1721" height="1721" alt="image" src="https://github.com/user-attachments/assets/f515eb83-a612-44a8-9b8a-ac374ce71c96" /># USAHouse_price_prediction2025
 usa house price prediction 2025 is using price of different categories of houses with accurate sufficent requirement and plot size 
 import pandas as pd
 import numpy as np
@@ -136,3 +136,129 @@ dummy_df = pd.DataFrame(data)
 dummy_df.to_csv('USA_Housing.csv', index=False)
 
 print("Dummy 'USA_Housing.csv' created successfully.")
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5000 entries, 0 to 4999
+Data columns (total 7 columns):
+ #   Column                        Non-Null Count  Dtype  
+---  ------                        --------------  -----  
+ 0   index                         5000 non-null   int64  
+ 1   Avg. Area Income              5000 non-null   float64
+ 2   Avg. Area House Age           5000 non-null   float64
+ 3   Avg. Area Number of Rooms     5000 non-null   float64
+ 4   Avg. Area Number of Bedrooms  5000 non-null   float64
+ 5   Area Population               5000 non-null   float64
+ 6   Price                         5000 non-null   float64
+dtypes: float64(6), int64(1)
+memory usage: 273.6 KB
+Linear Regression Intercept: 584693.4808558425
+Linear Regression Coefficients:
+                               Coefficient
+Avg. Area Income                -0.045262
+Avg. Area House Age           -202.980737
+Avg. Area Number of Rooms      944.569217
+Avg. Area Number of Bedrooms -1587.268906
+Area Population                  0.579710
+/usr/local/lib/python3.12/dist-packages/keras/src/layers/rnn/rnn.py:199: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+Epoch 1/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 10s 38ms/step - loss: 0.1760
+Epoch 2/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 36ms/step - loss: 0.0857
+Epoch 3/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0872
+Epoch 4/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 37ms/step - loss: 0.0856
+Epoch 5/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 34ms/step - loss: 0.0872
+Epoch 6/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0876
+Epoch 7/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 7s 58ms/step - loss: 0.0865
+Epoch 8/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 8s 39ms/step - loss: 0.0895
+Epoch 9/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 4s 37ms/step - loss: 0.0881
+Epoch 10/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 35ms/step - loss: 0.0885
+Epoch 11/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 35ms/step - loss: 0.0851
+Epoch 12/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 39ms/step - loss: 0.0868
+Epoch 13/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 34ms/step - loss: 0.0885
+Epoch 14/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 38ms/step - loss: 0.0859
+Epoch 15/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0856
+Epoch 16/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 34ms/step - loss: 0.0872
+Epoch 17/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0835
+Epoch 18/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 37ms/step - loss: 0.0874
+Epoch 19/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0851
+Epoch 20/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 38ms/step - loss: 0.0866
+Epoch 21/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 37ms/step - loss: 0.0826
+Epoch 22/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 36ms/step - loss: 0.0863
+Epoch 23/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 4s 37ms/step - loss: 0.0872
+Epoch 24/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 4s 38ms/step - loss: 0.0834
+Epoch 25/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 34ms/step - loss: 0.0858
+Epoch 26/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 34ms/step - loss: 0.0859
+Epoch 27/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 4s 37ms/step - loss: 0.0856
+Epoch 28/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 34ms/step - loss: 0.0828
+Epoch 29/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0846
+Epoch 30/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 6s 39ms/step - loss: 0.0851
+Epoch 31/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0836
+Epoch 32/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 37ms/step - loss: 0.0837
+Epoch 33/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 36ms/step - loss: 0.0851
+Epoch 34/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 34ms/step - loss: 0.0838
+Epoch 35/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 37ms/step - loss: 0.0823
+Epoch 36/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0868
+Epoch 37/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 34ms/step - loss: 0.0832
+Epoch 38/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 37ms/step - loss: 0.0838
+Epoch 39/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0818
+Epoch 40/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 34ms/step - loss: 0.0840
+Epoch 41/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 39ms/step - loss: 0.0846
+Epoch 42/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 4s 37ms/step - loss: 0.0826
+Epoch 43/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 34ms/step - loss: 0.0841
+Epoch 44/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 36ms/step - loss: 0.0851
+Epoch 45/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 39ms/step - loss: 0.0855
+Epoch 46/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 34ms/step - loss: 0.0815
+Epoch 47/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 3s 34ms/step - loss: 0.0844
+Epoch 48/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 6s 41ms/step - loss: 0.0834
+Epoch 49/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 35ms/step - loss: 0.0849
+Epoch 50/50
+94/94 ━━━━━━━━━━━━━━━━━━━━ 5s 36ms/step - loss: 0.0819
+63/63 ━━━━━━━━━━━━━━━━━━━━ 2s 24ms/step
+
